@@ -9,7 +9,7 @@ health = 10
 if age >= 18:
     print("You are old enough to play!")
 
-    wants_to_play = input("Do you want to play? ").lower()
+    wants_to_play = input("Do you want to play (yes/no)? ").lower()
     if wants_to_play == "yes":
         print("You are starting with", health, "health")
         print("Let's play!")
@@ -24,7 +24,7 @@ if age >= 18:
                 print("You managed to get across, but were bit by a fish and lost 5 health.")
                 health -= 5
 
-            answer = input("You notice a house and a river, Which do you go to(river/house)? ")
+            answer = input("You notice a house and a river, Which do you go to (river/house)? ")
             if answer == "house":
                 print("You go to the house and are greeted by the owner... He doesn't like you and you lose 5 health")
                 health -= 5
